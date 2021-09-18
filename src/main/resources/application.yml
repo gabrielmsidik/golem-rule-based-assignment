@@ -1,0 +1,22 @@
+golem-config:
+  name: GolemClassAssignmentLogic
+  environment: test
+  rootLogicNode:
+    defaultValue: UNKNOWN
+    childLogicNodes:
+      IS_SUPER_POWER: SUPERPOWER
+      IS_WATER:
+        defaultValue: AQUA
+        childLogicNodes:
+          HAS_BRONZE: AQUABRONZE
+          HAS_CLAY:
+            defaultValue: SEA MUD
+            childLogicNodes:
+              HEAVY_WEIGHT: AQUA
+          HAS_STEEL: SEASTEEL
+      IS_FIRE:
+        defaultValue: FIRAGA
+        childLogicNodes:
+          IS_HYBRID_MATERIAL:
+            defaultValue: MAGMA BEAST
+            HAS_STEEL: BLAZING ALLOY
